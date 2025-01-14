@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>left-right</title>
     <style>
         .container {
             display: grid;
-            grid-template-columns:550px auto;
+            grid-template-columns: 550px auto;
             grid-template-rows: 200px 400px;
             box-sizing: border-box;
             column-gap: 10px;
@@ -43,23 +43,18 @@
         }
 
         @media screen and (max-width:576px) {
-            .container  {
+            .container {
                 grid-template-columns: repeat(1, 1fr);
-                
-            }
-.left-description{
-    height: 190px;
-}
-.right-description{
-    height: 400px;
-}
-        }
 
-        @media screen and (min-width:577px) and (max-width:768px) {
-            .contener {
-                grid-template-columns: repeat(2, 1fr);
             }
 
+            .left-description {
+                height: 190px;
+            }
+
+            .right-description {
+                height: 400px;
+            }
         }
     </style>
 </head>
